@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<person>
+  <name>Taylor. This name is pulled from an external XML file using the SimpleXML PHP library!</name>
+</person>
