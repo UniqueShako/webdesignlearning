@@ -22,6 +22,8 @@
                 <br>
                 <p id="changeMe" onclick="changeIt()">Click to change me!</p>
                 <br>
-                <p>Only name in our data file: <?php $xmlFile = "data.xml"; $xmlName = simplexml_load_file($xmlFile); echo $xmlName->name;?></p>
+                <p>First person in our data file: <?php $xmlFile = "data.xml"; $xmlName = simplexml_load_file($xmlFile); echo $xmlName->person[0]->name;?></p>
+                <br>
+                <p>Second person in our data file: <?php echo $xmlName->person[1]->name;?></p>
         </body>
 </html>
